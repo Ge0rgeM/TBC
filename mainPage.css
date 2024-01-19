@@ -1,0 +1,90 @@
+:root{
+    --headerColor: rgba(26, 30, 31, 0.85)
+}
+body{
+    all: unset;
+}
+body *{
+    /* border: 1px dotted red; */
+}
+#mainPageWapper{
+    background-color: var(--headerColor);
+    width: 100%;
+    height: 100%;
+}
+#pageHeader{
+    background-color: transparent;
+    width: 100%;
+    height: 100px;
+    position: sticky;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#headerWrapperBackground{
+    width: 75vw;
+    height: 100%;
+    margin: auto;
+}
+#headerWrapper{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+#TBCtext{
+    color: white;
+}
+#logoWrapper{
+    width: 300px;
+    height: 100%;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}
+#headerNavigationWrapper{
+    width: 500px;
+    height: 100%;
+    background-color: transparent;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#headerNavigationWrapper div{
+    cursor: pointer;
+    transition: ease-in 0.3s;
+}
+#headerNavigationWrapper div:hover{
+    color: cyan;
+}
+#TBCLogo{
+    width: 17%;
+}
+#TBCLogo img{
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.pageSections{
+    width: 100%;
+    height: 350px;
+    background-color: black;
+}
+#TBCxUSAIDbackgroundWrapper{
+    display: flex;
+    flex-direction: column;
+}
+#TBCxUSAIDbackgroundIMG{
+    width: 100%;
+    position: absolute;
+}
+#TBCxUSAIDbackgroundIMG img{
+    width: 90%;
+    height: 350px;
+    object-fit: cover;
+    object-position: 50% 10%;
+}
