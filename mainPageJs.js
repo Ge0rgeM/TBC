@@ -1,47 +1,47 @@
 let coursesListObj = [
     {
         'courseName': 'iOS Development',
-        'CourseImg': '/Images/iOS Development.webp',
+        'CourseImg': './Images/iOS Development.webp',
         'courseStatus': 'რეგისტრაცია დასრულებულია',
     },
     {
         'courseName': 'React',
-        'CourseImg': '/Images/React.webp',
+        'CourseImg': './Images/React.webp',
         'courseStatus': 'რეგისტრაცია დასრულებულია',
     },
     {
         'courseName': 'Intro to Python',
-        'CourseImg': '/Images/PythonIntro.webp',
+        'CourseImg': './Images/PythonIntro.webp',
         'courseStatus': 'რეგისტრაცია დასრულებულია',
     },
     {
         'courseName': 'Advanced Python',
-        'CourseImg': '/Images/PythonAdvanced.webp',
+        'CourseImg': './Images/PythonAdvanced.webp',
         'courseStatus': 'რეგისტრაცია დასრულებულია',
     },
     {
         'courseName': 'Advanced Cybersecurity Course',
-        'CourseImg': '/Images/CybersecurityAdvanced.webp',
+        'CourseImg': './Images/CybersecurityAdvanced.webp',
         'courseStatus': 'რეგისტრაცია დასრულებულია',
     },
     {
         'courseName': 'ToT - Training of Trainers',
-        'CourseImg': '/Images/ToT.webp',
+        'CourseImg': './Images/ToT.webp',
         'courseStatus': 'რეგისტრაცია დასრულებულია',
     },
     {
         'courseName': 'Blockchain',
-        'CourseImg': '/Images/Blockchain.webp',
+        'CourseImg': './Images/Blockchain.webp',
         'courseStatus': 'რეგისტრაცია დასრულებულია',
     },
     {
         'courseName': 'DevOps',
-        'CourseImg': '/Images/DevOps.webp',
+        'CourseImg': './Images/DevOps.webp',
         'courseStatus': 'რეგისტრაცია დასრულებულია',
     },
     {
         'courseName': 'Information Security Governance',
-        'CourseImg': '/Images/InformationSecurityGovernance.webp',
+        'CourseImg': './Images/InformationSecurityGovernance.webp',
         'courseStatus': 'რეგისტრაცია დასრულებულია',
     },
 ]
