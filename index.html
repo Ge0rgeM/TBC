@@ -4,18 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="xSymbol.css">
-    <link rel="stylesheet" href="root.css">
-    <link rel="stylesheet" href="header.css">
-    <link rel="stylesheet" href="sectionTBCxUSAIDbackground.css">
-    <link rel="stylesheet" href="TBCxUSAIDabout.css">
-    <link rel="stylesheet" href="coursesList.css">
-    <link rel="stylesheet" href="partners.css">
+    <link rel="stylesheet" href="./CSS/index.css">
+    <link rel="stylesheet" href="./CSS/xSymbol.css">
+    <link rel="stylesheet" href="./CSS/root.css">
+    <link rel="stylesheet" href="./CSS/header.css">
+    <link rel="stylesheet" href="./CSS/TBCxUSAIDbackground.css">
+    <link rel="stylesheet" href="./CSS/TBCxUSAIDabout.css">
+    <link rel="stylesheet" href="./CSS/coursesList.css">
+    <link rel="stylesheet" href="./CSS/partners.css">
+    <link rel="stylesheet" href="./CSS/askedQuestions.css">
+    <link rel="stylesheet" href="./CSS/footer.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Georgian:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Zeyada&display=swap" rel="stylesheet">
 </head>
 <body>
     <div id="mainPageWapper">
@@ -26,7 +28,7 @@
                         <div id="logoWrapper">
                             <div id="logoDiv">
                                 <div id="TBCLogo">
-                                    <img src="./Images/TBCLogo.png" width="100%" alt="">
+                                    <img src="./Images/TBCLogo.png" width="100%" alt="TBC Logo">
                                 </div>
                                 <div id="TBCtext">
                                     <p>&nbsp;</p>
@@ -80,7 +82,7 @@
                         </p>
                     </div>
                     <div id="buttonForMoreInfoDiv">
-                        <a href="#""><span>გაიგე მეტი</span></a>
+                        <a href="https://www.tbcacademy.ge/usaid-about" target="_blank"><span>გაიგე მეტი</span></a>
                     </div>
                 </div>
             </section>
@@ -98,34 +100,152 @@
                     <div id="partnersSliderDiv">
                         <div id="partnerLeftArrow" class="partnerArrows">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                <path d="m14.707 12.707-4 4a1 1 0 0 1-1.414-1.414L12.586 12 9.293 8.707a1 1 0 1 1 1.414-1.414l4 4a1 1 0 0 1 0 1.414z"/>
+                                <path data-dir="left" d="m14.707 12.707-4 4a1 1 0 0 1-1.414-1.414L12.586 12 9.293 8.707a1 1 0 1 1 1.414-1.414l4 4a1 1 0 0 1 0 1.414z"/>
                             </svg>
                         </div>
                         <div id="partnersListDiv"></div>
                         <div id="partnerRightArrow" class="partnerArrows">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.707 12.707-4 4a1 1 0 0 1-1.414-1.414L12.586 12 9.293 8.707a1 1 0 1 1 1.414-1.414l4 4a1 1 0 0 1 0 1.414z"/>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path data-dir="right" d="m14.707 12.707-4 4a1 1 0 0 1-1.414-1.414L12.586 12 9.293 8.707a1 1 0 1 1 1.414-1.414l4 4a1 1 0 0 1 0 1.414z"/>
                             </svg>
                         </div>
                     </div>
                     <divs id="sliderDots">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="dot0">
-                            <path d="M12 9.5C13.3807 9.5 14.5 10.6193 14.5 12C14.5 13.3807 13.3807 14.5 12 14.5C10.6193 14.5 9.5 13.3807 9.5 12C9.5 10.6193 10.6193 9.5 12 9.5Z" fill="#000000"/>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path data-id="dot0" d="M12 9.5C13.3807 9.5 14.5 10.6193 14.5 12C14.5 13.3807 13.3807 14.5 12 14.5C10.6193 14.5 9.5 13.3807 9.5 12C9.5 10.6193 10.6193 9.5 12 9.5Z" fill="#000000"/>
                         </svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="dot1">
-                            <path d="M12 9.5C13.3807 9.5 14.5 10.6193 14.5 12C14.5 13.3807 13.3807 14.5 12 14.5C10.6193 14.5 9.5 13.3807 9.5 12C9.5 10.6193 10.6193 9.5 12 9.5Z" fill="#000000"/>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path data-id="dot1" d="M12 9.5C13.3807 9.5 14.5 10.6193 14.5 12C14.5 13.3807 13.3807 14.5 12 14.5C10.6193 14.5 9.5 13.3807 9.5 12C9.5 10.6193 10.6193 9.5 12 9.5Z" fill="#000000"/>
                         </svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="dot2"> 
-                            <path d="M12 9.5C13.3807 9.5 14.5 10.6193 14.5 12C14.5 13.3807 13.3807 14.5 12 14.5C10.6193 14.5 9.5 13.3807 9.5 12C9.5 10.6193 10.6193 9.5 12 9.5Z" fill="#000000"/>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"> 
+                            <path data-id="dot2" d="M12 9.5C13.3807 9.5 14.5 10.6193 14.5 12C14.5 13.3807 13.3807 14.5 12 14.5C10.6193 14.5 9.5 13.3807 9.5 12C9.5 10.6193 10.6193 9.5 12 9.5Z" fill="#000000"/>
                         </svg>
                     </divs>
                 </div>
             </section>
+            <section id="askedQuestions" class="pageSections">
+                <div id="askedQuestionsWrapper">
+                    <div id="askedQuestionsSectionHead">
+                        <div id="askedQuestionsSectionName">
+                            <p>
+                                ხშირად დასმული კითხვები
+                            </p>
+                        </div>
+                        <div id="buttonForAllQuestions">
+                            <a href="#" style="color: var(--TBCBlue);">
+                                ყველა კითხვა
+                            </a>
+                        </div>
+                    </div>
+                    <div id="askedQuestionsSectionBody">
+                        <div class="question">
+                            <div class="questionTextDiv">
+                                <div class="questionText">
+                                    როგორ ხდება კურსებზე რეგისტრაცია და შერჩევა?
+                                </div>
+                                <div class="quesitonArrow">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <path d="m14.707 12.707-4 4a1 1 0 0 1-1.414-1.414L12.586 12 9.293 8.707a1 1 0 1 1 1.414-1.414l4 4a1 1 0 0 1 0 1.414z"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="questionAnswerDiv">
+                                <div class="questionAnswer">
+                                    <div id="asnwerHeader">
+                                        კურსზე რეგისტრაციისთვის უნდა გაიარო რამდენიმე ეტაპი:
+                                    </div>
+                                    <div id="mainPart">
+                                        <ul><b>I ეტაპი</b> - პირველ ეტაპზე საჭიროა, შეავსო სასურველი კურსისთვის განკუთვნილი სარეგისტრაციო ფორმა, რომელიც განთავსებულია კურსის შიდა გვერდზე. კურსზე რეგისტრაციის დასრულების შემდეგ დაიწყება შემოსული განცხადებების გადარჩევა. </ul>
+                                        <ul><b>II ეტაპი</b> - შერჩევის მეორე ეტაპი კურსების მიხედვით განსხვავებულია, ზოგიერთი კურსისთვის მოიცავს პრე-ტესტს, ზოგიერთ კურსზე კი უნარების ტესტს, სადაც მინიმალური ზღვარის გადალახვის შემთხვევაში გადახვალ შერჩევის შემდეგ ეტაპზე. </ul>
+                                        <ul><b>III ეტაპი</b> - მესამე ეტაპი კურსების მიხედვით განსხვავდება: Advance კურსებზე, სადაც მოითხოვება გარკვეული ტექნიკური ცოდნა, მონაწილეებმა უნდა დაწერონ ტექნიკური ტესტი ცოდნის დონის შესამოწმებლად, ხოლო კურსებზე, სადაც რაიმე ტიპის წინასწარი ცოდნა მოთხოვნილი არ არის უნდა შეასრულოთ ტექნიკური დავალება, რაც თქვენი კვლევისა და თვითსწავლის უნარს ამოწმებს. </ul>
+                                        <ul><b>IV ეტაპი</b> - შერჩევის ბოლო მეოთხე ეტაპი მოიცავს გასაუბრებას შესარჩევ კომისიასთან. გასაუბრების წარმატებით გავლის შემთხვევაში ჩაირიცხებით კურსზე და გაფორმდება შესაბამისი ხელშეკრულება. </ul>
+                                    </div>
+                                    <div class="answerFooter">
+                                        * სანამ კურსზე დარეგისტრირდები მნიშვნელოვანია, 
+                                        ყურადღებით წაიკითხო კურსის აღწერა, ნახო რას 
+                                        ისწავლი კურსის განმავლობაში და გაიგო გააჩნია თუ 
+                                        არა კურსს დასწრების წინაპირობა. 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="question">
+                            <div class="questionTextDiv">
+                                <div class="questionText">
+                                    შემიძლია თუ არა ერთზე მეტ კურსზე რეგისტრაცია?
+                                </div>
+                                <div class="quesitonArrow">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <path d="m14.707 12.707-4 4a1 1 0 0 1-1.414-1.414L12.586 12 9.293 8.707a1 1 0 1 1 1.414-1.414l4 4a1 1 0 0 1 0 1.414z"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="questionAnswerDiv">
+                                <div class="questionAnswer">
+                                    TBC X USAID ტექნოლოგიური განათლებისთვის პროგრამაში 
+                                    თითოეულ კანდიდატს აქვს მხოლოდ ერთი კურსის გავლის შესაძლებლობა. 
+                                    გარდა Information Security და Python კურსებისა, სადაც Basic დონის 
+                                    გავლის შემდეგ შესაძლებელია სწავლის გაგრძელება Advance დონეზე.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="question">
+                            <div class="questionTextDiv"">
+                                <div class="questionText">
+                                    რა ღირს სწავლა პროგრამის ფარგლებში?
+                                </div>
+                                <div class="quesitonArrow">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <path d="m14.707 12.707-4 4a1 1 0 0 1-1.414-1.414L12.586 12 9.293 8.707a1 1 0 1 1 1.414-1.414l4 4a1 1 0 0 1 0 1.414z"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="questionAnswerDiv">
+                                <div class="questionAnswer">
+                                    პროგრამის ფარგლებში კურსებზე სწავლა სრულიად
+                                    დაფინანსებულია თიბისი ბანკისა და USAID-ის მიერ.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
-        <div id="temp"></div>
-        <footer id="PageFooter">
+        <footer id="pageFooter">
+            <div id="footerDiv">
+                <div id="rulesDiv">
+                    <div id="footerTBClogo">
+                        <img src="./Images/FooterTBCLogo.webp" alt="">
+                    </div>
+                    <div id="copyright">
+                        <span><span id="raised">&copy;2023</span> ყველა უფლება დაცულია</span>
+                    </div>
+                    <div id="rules">
+                        <a href="#"><span>წესები და პირობები</span></a>
+                    </div>
+                </div>
+                <div id="textUsDiv">
+                    <div id="logosDiv">
+                        <div id="FB">
+                            <img src="./Images/FB Logo.webp" alt="">
+                        </div>
+                        <div id="YT">
+                            <img src="./Images/Youtube Logo.webp" alt="">
+                        </div>
+                    </div>
+                    <div id="textUs">
+                        <div id="textUsButton">
+                            <a href="mailto:itacademy@tbcbank.com.ge" target="_self"><span>მოგვწერეთ</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </footer>
     </div>
 </body>
 </html>
 <script src="./Javascript/coursesList.js"></script>
 <script src="./Javascript/partners.js"></script>
+<script src="./Javascript/scrollDown.js"></script>
+<script src="./Javascript/toggleQuestions.js"></script>
+<script src="./Javascript/LogoLinks.js"></script>
