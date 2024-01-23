@@ -1,0 +1,27 @@
+#TBCxUSAIDbackgroundWrapper{
+    display: flex;
+    flex-direction: column;
+    height: var(--TBCxUSAIDbackgroundWidth);
+}
+#TBCxUSAIDbackgroundIMG{
+    width: 100%;
+    position: absolute;
+    user-select: none;
+}
+#TBCxUSAIDbackgroundIMG img{
+    width: 100%;
+    height: var(--TBCxUSAIDbackgroundWidth);
+    object-fit: cover;
+    object-position: 60%;
+}
+#TBCxUSAIDbackgroundText{
+    color: white;
+    z-index: 2;
+    text-align: left;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    font-weight: bold;
+    line-height: 80px;
+    white-space:nowrap;
+}

@@ -1,0 +1,11 @@
+:root{
+    --headerColor: rgba(22,22,22,1);
+    --slightGray: rgba(43,43,43,1);
+    --headerHeight: 90px;
+    --leftRightPaddings: 1000px;
+    --TBCBlue: rgba(0, 174, 239, 1);
+    --TBCBlueDarker: rgba(0, 174, 239, 0.7);
+    --TBCxUSAIDbackgroundWidth: 400px;
+    --borderColor: rgba(85, 85, 85, 1);
+    --footerBackground: rgba(26,30,31,255);
+}

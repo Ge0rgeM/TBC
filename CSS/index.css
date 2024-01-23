@@ -1,0 +1,19 @@
+body{
+    all: unset;
+    font-family: "Kanit", sans-serif, monospace;
+    font-weight: 700;
+    font-size: 14px;
+    background-color: var(--headerColor);
+}
+#temp{
+    width: 100%;
+    height: 1000px;
+}
+#mainPageWapper{
+    width: 100%;
+    height: 100%;
+}
+.pageSections{
+    width: 100%;
+    background-color: transparent;
+}

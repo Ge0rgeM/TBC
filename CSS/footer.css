@@ -1,0 +1,80 @@
+#pageFooter {
+    width: 100%;
+    height: 200px;
+    background-color: var(--footerBackground);
+    color: white;
+    font-weight: 400;
+    font-size: 16px;
+    margin-top: 40px;
+}
+#footerDiv{
+    width: var(--leftRightPaddings);
+    height: 100%;
+    margin: auto;
+    display: flex;
+}
+#rulesDiv{
+    width: 75%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+#raised{
+    font-size: smaller;
+    vertical-align: top;
+}
+#rules a{
+    all: unset;
+    cursor: pointer;
+    transition: 0.3s;
+}
+#rules a:hover{
+    color: rgba(255, 255, 255, 0.75);
+}
+#textUsDiv{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+#logosDiv > *{
+    padding-top: 30px;
+} 
+#logosDiv{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+#FB{
+    padding-right: 10px;
+}
+#logosDiv img{
+    cursor: pointer;
+}
+#textUs{
+    height: 40%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+#textUs a{
+    all: unset;
+    font-size: 18px !important;
+}
+#textUsButton{
+    width: 70%;
+    height: 60%;
+    background-color: var(--TBCBlue);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+#textUsButton:hover{
+    background-color: var(--TBCBlueDarker);
+}

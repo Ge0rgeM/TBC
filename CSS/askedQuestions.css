@@ -1,0 +1,80 @@
+#askedQuestions{
+    width: 100%;
+    margin-top: 30px;
+}
+#askedQuestionsWrapper{
+    width: calc(var(--leftRightPaddings) - 200px);
+    margin: auto;
+}
+#askedQuestionsSectionHead{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#askedQuestionsSectionHead p, #askedQuestionsSectionHead a{
+    all: unset;
+    color: white;
+    font-size: 24px;
+}
+#askedQuestionsSectionName{
+    font-weight: 600;
+}
+#buttonForAllQuestions a{
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.3s;
+}
+#buttonForAllQuestions a:hover{
+    color: var(--TBCBlueDarker) !important;
+}
+#askedQuestionsSectionBody{
+    width: 100%;
+}
+.question{
+    width: 100%;
+    height: fit-content;
+    color: white;
+    fill: white;
+    font-size: 20px;
+    font-weight: 300;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.3);
+    margin-top: 40px;
+    padding-bottom: 20px;
+}
+.questionTextDiv{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.question{
+    width: 97%
+}
+.quesitonArrow{
+    width: 3%;
+    height: 3%;
+}
+.quesitonArrow svg{
+    transform: rotate(90deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.questionAnswer {
+    position: relative;
+    width: 95%;
+    max-height: 0;
+    margin: auto;
+    margin-top: 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+    font-size: 14px;
+}
+.rotateArrow{
+    transform: rotate(-90deg) !important;
+}
