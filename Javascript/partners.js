@@ -41,6 +41,7 @@ const partners = [
         },
     ],
 ]
+
 function createParentElementForTripleImgs(id) {
     const elm = `<div class="tripleImgDiv" data-id="${id}"></div>`
     return elm
@@ -58,6 +59,7 @@ function addPartners(Obj, elemAddr){
         elemAddr.innerHTML += createParentElementForTripleImgs(id)
         for(const partners of clusterOfPartners){
             elemAddr.children[id].classList.add(partners.status)
+            elemAddr.children[id].classList.remove('notActive')
             elemAddr.children[id].innerHTML += createPartnerElement(partners.partnerName, partners.partnerImgSrc)
         }
         id++;
@@ -66,33 +68,66 @@ function addPartners(Obj, elemAddr){
 }
 
 addPartners(partners, document.getElementById('partnersListDiv'))
-// let CURRENT_PAGE = 99999
 
-const allDivs = document.getElementsByClassName('tripleImgDiv')
 function rotateSlider() {
+    const allDivs = document.getElementsByClassName('tripleImgDiv')
     const activeDiv = document.querySelector('.tripleImgDiv.active')
     const nextActiveDiv = activeDiv.nextElementSibling || allDivs[0];
 
     activeDiv.classList.remove('active')
     nextActiveDiv.classList.add('active')
 }
-setInterval(rotateSlider, 4500);
 
-// function addEventToArrows(event) {
-//     let partnersDiv = document.getElementById('partnersListDiv')
-//     const elementInfo = event.currentTarget.getAttribute('data-info');
-//     if (elementInfo === 'RightArrow'){
-//         CURRENT_PAGE++;
-//         addPartners(partners[CURRENT_PAGE%3], partnersDiv)
-//     }else {
-//         CURRENT_PAGE--;
-//         addPartners(partners[CURRENT_PAGE%3], partnersDiv)
-//     }
-// }
+const SLIDER_TIMER = 4500
+let automaticSlider = setInterval(rotateSlider, SLIDER_TIMER);
 
-// const partnerArrows = document.querySelectorAll('.partnerArrows svg path');
-// for(const arrow of partnerArrows){
-//     arrow.addEventListener('click', addEventToArrows)
-// }
+function rotateSliderLeft() {
+    const allDivs = document.getElementsByClassName('tripleImgDiv')
+    const activeDiv = document.querySelector('.tripleImgDiv.active')
+    const nextActiveDiv = activeDiv.previousElementSibling || allDivs[allDivs.length-1];
+
+    activeDiv.classList.remove('active')
+    nextActiveDiv.classList.add('active')
+}
+
+function rotateSliderRight() {
+    const allDivs = document.getElementsByClassName('tripleImgDiv')
+    const activeDiv = document.querySelector('.tripleImgDiv.active')
+    const nextActiveDiv = activeDiv.nextElementSibling || allDivs[0];
+
+    activeDiv.classList.remove('active')
+    nextActiveDiv.classList.add('active')
+}
+
+const partnerArrows = document.querySelectorAll('.partnerArrows svg path');
+for(const arrow of partnerArrows){
+    arrow.addEventListener('click', addEventToArrows)
+}
+
+function addEventToArrows(event) {
+    const elementInfo = event.currentTarget.getAttribute('data-dir');
+    clearInterval(automaticSlider)
+    if (elementInfo === 'left')
+        rotateSliderLeft()
+    else if(elementInfo === 'right')
+        rotateSliderRight()
+    automaticSlider = setInterval(rotateSlider, SLIDER_TIMER)
+}
 
 
+const sliderDots = document.querySelectorAll('#sliderDots svg path')
+for(const dot of sliderDots){
+    dot.addEventListener('click', addEventToDots)
+}
+
+function addEventToDots(event){
+    const elementInfo = event.currentTarget.getAttribute('data-id');
+    const allDivs = document.getElementsByClassName('tripleImgDiv')
+    const activeDiv = document.querySelector('.tripleImgDiv.active')
+    const nextActiveDiv = allDivs[parseInt(elementInfo[elementInfo.length-1])];
+    
+    clearInterval(automaticSlider)
+    activeDiv.classList.remove('active')
+    nextActiveDiv.classList.add('active')
+    automaticSlider = setInterval(rotateSlider, SLIDER_TIMER)
+}
