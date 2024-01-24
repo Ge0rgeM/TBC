@@ -13,6 +13,10 @@
     position: fixed;
     transition: opacity .5s;
 }
+#toTopAnchor{
+    all: unset;
+    scroll-behavior: smooth;
+}
 .scrolled-down{
     opacity: 0.85;
 }
@@ -57,7 +61,7 @@
     color: white;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
 }
 #headerNavigationWrapper div{

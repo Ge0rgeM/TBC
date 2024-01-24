@@ -1,0 +1,50 @@
+@media (max-width: 1120px) {
+    :root{
+        --leftRightPaddings: 85%;
+    }
+    .listsDiv{
+        width: 400px;
+        height: 400px;
+    }
+    .courseAboutDiv{
+        height: calc(100% - 200px);
+        width: 100%;
+    }
+    #coursesList{
+        /* justify-content: center; */
+    }
+}
+@media (max-width: 960px) {
+    .listsDiv{
+        width: 500px;
+        height: 450px;
+    }
+    .courseAboutDiv{
+        height: calc(100% - 250px);
+        width: 100%;
+    }
+    .arrow{
+        width: 10%;
+    }
+    .arrow svg{
+        width: 45%;
+    }
+    #coursesList{
+        justify-content: center;
+    }
+    .partnerArrows{
+        display: none;
+    }
+    .partnerImgDiv img{
+        width: 90%;
+    }
+    :root{
+        --TBCxUSAIDbackgroundWidth: 250px;
+    }
+    #partnerSectionName{
+        margin: 10px 0 10px 0;
+    }
+    #partnersListDiv{
+        height: 250px;
+    }
+}

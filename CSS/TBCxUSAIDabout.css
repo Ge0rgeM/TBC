@@ -14,8 +14,8 @@
     padding-top: 40px;
     padding-bottom: 40px;
     color: white;
-    font-size: 28px;
-    line-height: 46px;
+    font-size: 1.5vw;
+    /* line-height: 26px; */
     font-weight: 400;
 }
 #TBCxUSAIDaboutTextDiv p{
@@ -27,7 +27,7 @@
 #buttonForMoreInfoDiv a{
     all: unset;
     color: var(--TBCBlue);
-    font-size: 20px;
+    font-size: 1.3vw;
     cursor: pointer;
     transition: 0.15s ease-in;
 }
