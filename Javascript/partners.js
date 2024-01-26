@@ -131,3 +131,37 @@ function addEventToDots(event){
     nextActiveDiv.classList.add('active')
     automaticSlider = setInterval(rotateSlider, SLIDER_TIMER)
 }
+
+const slideContainer = document.getElementById('partnersSliderDiv');
+let touchStartX = 0;
+let touchEndX = 0;
+
+slideContainer.addEventListener('touchstart', function(event) {
+    touchStartX = event.touches[0].clientX;
+});
+
+slideContainer.addEventListener('touchmove', function(event) {
+    touchEndX = event.touches[0].clientX;
+});
+
+slideContainer.addEventListener('touchend', function() {
+    if(window.innerWidth <= 720)
+        handleSlide();
+});
+
+function handleSlide() {
+
+    clearInterval(automaticSlider)
+    const slideDistance = touchEndX - touchStartX;
+    console.log(slideDistance)
+    // Set a threshold for the slide distance
+    const threshold = 50; // Left to Righ
+    const threshold1 = -50; // Righ to Left
+
+    if(slideDistance > threshold) {
+        rotateSliderLeft()
+    }else if(slideDistance < threshold1){
+        rotateSliderRight()
+    }
+    automaticSlider = setInterval(rotateSlider, SLIDER_TIMER)
+}

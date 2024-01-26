@@ -8,12 +8,11 @@ window.addEventListener('scroll', () => {
     }
 });
 
+
 let lastScrollTop = 0;
-
 window.addEventListener('scroll', function() {
-    const currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
-
-    if (currentScrollTop > lastScrollTop && window.innerWidth <= 720) {
+    const currentScrollTop = window.scrollY || document.documentElement.scrollTop;
+    if (currentScrollTop > lastScrollTop && window.innerWidth <= 720 && window.scrollY>1) {
         // Scrolling down, hide the header
         header.classList.add('hidden');
     } else {

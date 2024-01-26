@@ -84,3 +84,32 @@
 .hidden{
     transform: translateY(-100%);
 }
+#mobileNavigationListMenu{
+    all: unset;
+    position: fixed;
+    top: 0;
+    right: -60%; /* Start off-screen */
+    width: 60%;
+    height: 100vh;
+    color: white;
+    transition: right 0.5s ease-in-out;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    background-color: var(--slightGray);
+    padding-top: 120px;
+}
+#mobileNavigationListMenu  div{
+    margin-right: 20px;
+    padding-top: 20px;
+    font-weight: 400;
+    font-size: 16px;
+    cursor: pointer;
+    transition: ease-in 0.3s;
+    white-space: nowrap;
+}
+#mobileNavigationListMenu  div:hover{
+    color: var(--TBCBlue);
+}
