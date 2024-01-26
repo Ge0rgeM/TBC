@@ -1,7 +1,7 @@
 :root{
     --headerColor: rgba(22,22,22,1);
     --slightGray: rgba(43,43,43,1);
-    --headerHeight: 90px;
+    --headerHeight: 75px;
     --leftRightPaddings: 950px;
     --TBCBlue: rgba(0, 174, 239, 1);
     --TBCBlueDarker: rgba(0, 174, 239, 0.7);

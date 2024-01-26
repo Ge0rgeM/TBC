@@ -22,7 +22,7 @@
 </head>
 <body>
     <div id="mainPageWapper">
-        <dvi id="toTop">George</dvi>
+        <dvi id="toTop"></dvi>
         <div id="pageHeaderDiv">
             <header id="pageHeader">
                 <div id="headerWrapperBackground">
@@ -54,6 +54,13 @@
                             <div id="TBCIT">TBC IT</div>
                             <div id="TBCxUSAID" style="color: var(--TBCBlue)">TBC x USAID</div>
                             <div id="risks">რისკები</div>
+                        </div>
+                        <div id="mobileNavigationMenuDiv" onclick="toggleMenu(this)">
+                            <div class="lines" id="line1"></div>
+                            <div class="lines" id="line2"></div>
+                            <div id="line3Div">
+                                <div class="lines" id="line3"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -238,9 +245,11 @@
                         </div>
                     </div>
                     <div id="textUs">
-                        <div id="textUsButton">
-                            <a href="mailto:itacademy@tbcbank.com.ge" target="_self"><span>მოგვწერეთ</span></a>
-                        </div>
+                        <a href="mailto:itacademy@tbcbank.com.ge" target="_self">
+                            <div id="textUsButton">
+                                <span>მოგვწერეთ</span>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -253,3 +262,4 @@
 <script src="./Javascript/scrollDown.js"></script>
 <script src="./Javascript/toggleQuestions.js"></script>
 <script src="./Javascript/LogoLinks.js"></script>
+<script src="./Javascript/mobileNavigation.js"></script>

@@ -7,3 +7,19 @@ window.addEventListener('scroll', () => {
         header.classList.add('scrolled-down')
     }
 });
+
+let lastScrollTop = 0;
+
+window.addEventListener('scroll', function() {
+    const currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+    if (currentScrollTop > lastScrollTop && window.innerWidth <= 720) {
+        // Scrolling down, hide the header
+        header.classList.add('hidden');
+    } else {
+        // Scrolling up or not on a small screen, show the header
+        header.classList.remove('hidden');
+    }
+
+    lastScrollTop = currentScrollTop;
+});
