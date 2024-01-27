@@ -53,7 +53,7 @@ function addCourses(Obj, elmAddr){
 }
 function createCourse(name,imgSrc,courseStatus){
     const elm = `<div class="listsDiv">
-    <div id="CourseImg">
+    <div class="CourseImg">
         <img src="${imgSrc}" alt="Course Photo" width="100%">
     </div>
     <div class="courseAboutDiv">

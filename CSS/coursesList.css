@@ -21,8 +21,11 @@
     width: 300px;
     height: 400px;
     border: 1px solid var(--borderColor);
-    border-radius: 6px;
+    border-radius: 10px;
     margin: 0 0 40px 0;
+}
+.CourseImg img{
+    border-radius: 10px 10px 0 0 ;
 }
 .courseAboutDiv{
     height: calc(100% - 150px);

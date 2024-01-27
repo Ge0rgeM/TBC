@@ -113,3 +113,14 @@
 #mobileNavigationListMenu  div:hover{
     color: var(--TBCBlue);
 }
+.question{
+    width: 100%;
+    height: fit-content;
+    color: white;
+    fill: white;
+    font-size: 20px;
+    font-weight: 300;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.3);
+    margin-top: 40px;
+    padding-bottom: 20px;
+}

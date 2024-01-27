@@ -1,6 +1,7 @@
 @media (max-width: 1120px) {
     :root{
         --leftRightPaddings: 85%;
+        --TBCxUSAIDbackgroundWidth: 230px
     }
     .listsDiv{
         width: 400px;
@@ -10,14 +11,29 @@
         height: calc(100% - 200px);
         width: 100%;
     }
+    #logoWrapper{
+        width: 180px;
+    }
+    #TBCtext span{
+        font-size: 20px;
+    }
+    #TBCxUSAIDaboutTextDiv, #buttonForMoreInfoDiv a{
+        font-size: 1.8vw;
+    }
 }
 @media (max-width: 960px) {
+    :root{
+        --leftRightPaddings: 80%;
+    }
+    #headerNavigationWrapper{
+        width: 400px;
+    }
     .listsDiv{
-        width: 500px;
-        height: 450px;
+        width: 400px;
+        height: 350px;
     }
     .courseAboutDiv{
-        height: calc(100% - 250px);
+        height: calc(100% - 210px);
         width: 100%;
     }
     .arrow{
@@ -41,14 +57,59 @@
     #partnersListDiv{
         height: 350px;
     }
+    #askedQuestionsSectionHead p, #askedQuestionsSectionHead a{
+        font-size: 21px;
+    }
+    .question{
+        font-size: 18px;
+    }
+    .questionAnswer{
+        font-size: 14px;
+    }
+    .quesitonArrow{
+        width: 6%;
+        height: 6%;
+    }
+}
+@media (max-width: 760px) {
     .tripleImgDiv{
-        height: 35%;
+        height: 350px;
         display: flex;
         justify-content: space-evenly;
         flex-direction: column;
     }
+    #askedQuestionsSectionHead p, #askedQuestionsSectionHead a{
+        font-size: 18px;
+    }
+    .question{
+        font-size: 18px;
+    }
+    .questionAnswer{
+        font-size: 14px;
+    }
+    .quesitonArrow{
+        width: 8%;
+        height: 8%;
+    }
 }
 @media (max-width: 720px) {
+    :root{
+        --TBCxUSAIDbackgroundWidth: 180px;
+    }
+    #TBCxUSAIDaboutTextDiv, #buttonForMoreInfoDiv a{
+        font-size: 2.2vw;
+    }
+    .listsDiv{
+        width: 300px;
+        height: 320px;
+    }
+    .courseAboutDiv{
+        height: calc(100% - 120px);
+        width: 100%;
+    }
+    .courseStatus{
+        height: 20%;
+    }
     #sliderDots{
         display: flex;
         justify-content: center;
@@ -119,5 +180,40 @@
     }
     .questionAnswer{
         font-size: 12px;
+    }
+    #textUs a{
+        width: 100%;
+    }
+}
+@media (max-width: 450px){
+    :root{
+        --TBCxUSAIDbackgroundWidth: 120px;
+    }
+    #TBCxUSAIDaboutTextDiv, #buttonForMoreInfoDiv a{
+        font-size: 2.7vw;
+    }
+    .lineBreak{
+        display: none;
+    }
+    #TBCxUSAIDbackgroundTextDiv{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        line-height: 30px;
+    }
+    #TBCxUSAIDbackgroundTextDiv span:nth-child(1){
+        font-size: 3.5vw !important;
+    }
+    #TBCxUSAIDbackgroundTextDiv span:nth-child(2){
+        font-size: 3.2vw !important;
+    }
+    #rulesDiv{
+        font-size: 12px;
+    }
+    #textUs a{
+        width: 100%;
+    }
+    #textUs a{
+        font-size: 10px !important;
     }
 }
