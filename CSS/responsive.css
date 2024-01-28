@@ -96,15 +96,27 @@
     :root{
         --TBCxUSAIDbackgroundWidth: 180px;
     }
+    #TBCxUSAIDbackgroundTextDiv{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        line-height: 20px;
+    }
+    #TBCxUSAIDbackgroundTextDiv span:nth-child(1){
+        font-size: 7vw !important;
+    }
+    #TBCxUSAIDbackgroundTextDiv span:nth-child(2){
+        font-size: 6vw !important;
+    }
     #TBCxUSAIDaboutTextDiv, #buttonForMoreInfoDiv a{
-        font-size: 2.2vw;
+        font-size: 3vw;
     }
     .listsDiv{
-        width: 300px;
-        height: 320px;
+        width: 400px;
+        height: 350px;
     }
     .courseAboutDiv{
-        height: calc(100% - 120px);
+        height: calc(100% - 180px);
         width: 100%;
     }
     .courseStatus{
@@ -187,10 +199,13 @@
 }
 @media (max-width: 450px){
     :root{
-        --TBCxUSAIDbackgroundWidth: 120px;
+        --TBCxUSAIDbackgroundWidth: 160px;
+    }
+    .courseName{
+        width: 100%;
     }
     #TBCxUSAIDaboutTextDiv, #buttonForMoreInfoDiv a{
-        font-size: 2.7vw;
+        font-size: 4vw;
     }
     .lineBreak{
         display: none;
@@ -199,21 +214,45 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        line-height: 30px;
-    }
-    #TBCxUSAIDbackgroundTextDiv span:nth-child(1){
-        font-size: 3.5vw !important;
-    }
-    #TBCxUSAIDbackgroundTextDiv span:nth-child(2){
-        font-size: 3.2vw !important;
+        line-height: 20px;
     }
     #rulesDiv{
         font-size: 12px;
+        width: 65%; 
     }
     #textUs a{
         width: 100%;
     }
     #textUs a{
         font-size: 10px !important;
+    }
+    #textUsButton{
+        font-size: 15px;
+    }
+    #textUsDiv{
+        width: 35%;
+    }
+    @media (max-width: 320px){
+        :root{
+            --TBCxUSAIDbackgroundWidth: 120px;
+            --leftRightPaddings: 90%;
+        }
+        .listsDiv{
+            width: 400px;
+            height: 300px;
+        }
+        .courseAboutDiv{
+            height: calc(100% - 120px);
+            width: 100%;
+        }
+        #textUsButton{
+            font-size: 15px;
+        }
+        #textUsDiv{
+            width: 40%;
+        }
+        #rulesDiv{
+            width: 60%;
+        }
     }
 }
