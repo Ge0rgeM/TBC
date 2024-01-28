@@ -13,10 +13,10 @@ use link: ge0rgem.github.io/TBC/
 From Code section download ZIP file and when you extract it open index.html in your desired web browser.  
 ## How to use project
 ### To set up project locally first of all you need to have Git installed. 
-Link: https://git-scm.com/
+Link: https://git-scm.com/  
 ### Next step is to clone the repository.
-First navigate where you want to clone the Repository: cd path/to/your/directory   
-Next You need to use this command to clone Repository: git clone https://github.com/username/repository.git
+First navigate where you want to clone the Repository: **cd path/to/your/directory**   
+Next You need to use this command to clone Repository: git clone https://github.com/username/repository.git  
 ### Access Project 
 lastly, To access project file you need to open file "index.html" in your browser.    
 ## Contact Information
