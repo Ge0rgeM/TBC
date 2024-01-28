@@ -24,12 +24,12 @@
     font-size: smaller;
     vertical-align: top;
 }
-#rules a{
+#rules{
     all: unset;
     cursor: pointer;
     transition: 0.3s;
 }
-#rules a:hover{
+#rules:hover{
     color: rgba(255, 255, 255, 0.75);
 }
 #textUsDiv{
@@ -77,4 +77,50 @@
 }
 #textUs a:hover{
     background-color: var(--TBCBlueDarker);
+}
+#sidePanelForRules{
+    all: unset;
+    position: fixed;
+    top: 0;
+    right: -80%; /* Start off-screen */
+    width: 80%;
+    height: 100vh;
+    color: rgb(168, 166, 166);
+    background-color: var(--slightGray);
+    transition: right 0.5s ease-in-out;
+    overflow: hidden;
+    display: flex;
+    z-index: 101;
+    overflow-y: scroll;
+}
+#sidePanelForRules a{
+    color: rgb(168, 166, 166) !important;
+}
+#sidePanelForRules.openSidePannel{
+    right: 0%;
+}
+#sidePanelForRulesText{
+    width: 88%;
+    margin:auto;
+}
+#sidePanelForRules::-webkit-scrollbar {
+    width: 0px;
+}
+#closeSideRules{
+    cursor: pointer;
+    width: 100%;
+    color: var(--slightGray);
+    background-color: white;
+    height: 80px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    transition: 0.3s;
+    border-radius: 7px;
+}
+#closeSideRules:hover{
+    background-color: var(--TBCBlue);
+    color: white;
 }
