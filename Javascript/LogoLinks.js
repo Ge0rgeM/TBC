@@ -1,3 +1,4 @@
+// just simple event listeners so our Facebook and youtube logos work.
 const fb = document.getElementById('FB').children[0]
 const yt = document.getElementById('YT').children[0]
 

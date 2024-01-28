@@ -1,4 +1,8 @@
 let coursesListObj = [
+    // Object to store all courses. 
+    // If we need to add something new we can easily add 
+    // new course information to this object and it will 
+    // be automatically rendered in browser.
     {
         'courseName': 'iOS Development',
         'CourseImg': './Images/iOS Development.webp',
@@ -46,11 +50,12 @@ let coursesListObj = [
     },
 ]
 
+// function to add created courses to the desired element
 function addCourses(Obj, elmAddr){
-    for(let course of Obj){
+    for(let course of Obj)
         elmAddr.innerHTML+=createCourse(course.courseName,course.CourseImg,course.courseStatus)
-    }
 }
+// function to create full course element using our course object
 function createCourse(name,imgSrc,courseStatus){
     const elm = `<div class="listsDiv">
     <div class="CourseImg">
@@ -75,4 +80,5 @@ function createCourse(name,imgSrc,courseStatus){
 </div>`
     return elm;
 }
-addCourses(coursesListObj, document.getElementById('coursesList'))
+
+addCourses(coursesListObj, document.getElementById('coursesList')) // calling function to render everything in browser

@@ -7,7 +7,7 @@ for(const question of allQuestions) {
         const elmArrow = question.children[1].children[0]
         
         if(answerElement.style.maxHeight === '0px' || answerElement.style.maxHeight === ''){
-            removeActiveQuestions()
+            removeActiveQuestions() // closing active queston while opening next one
             answerElement.style.maxHeight = answerElement.scrollHeight + 'px'
             answerElement.classList.add('active')
             elmArrow.classList.add('rotateArrow')
@@ -27,7 +27,7 @@ function removeActiveQuestions() {
                 ans.classList.remove('active')
                 ans.parentElement.previousElementSibling.children[1].children[0].classList.remove('rotateArrow')
                 ans.style.maxHeight = '0'
-                break;
+                break; // we know that there will be only one opened question 
             }
         }
     }

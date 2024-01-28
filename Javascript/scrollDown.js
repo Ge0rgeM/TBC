@@ -1,4 +1,5 @@
 const header = document.getElementById('pageHeader');
+// change opacity of header 
 window.addEventListener('scroll', () => {
     const scrollTop = window.scrollY || document.documentElement.scrollTop;
     if(scrollTop === 0){
