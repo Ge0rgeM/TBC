@@ -15,6 +15,7 @@ This is a clone for TBC academy website, with a plain HTML, CSS, Javascript code
 - [`Images`](https://github.com/Ge0rgeM/TBC/tree/main/Images)
 
 ## Features
+- Easy to read and understand code with explanations.
 - Responsive design for various screen sizes.
 - Interactive elements using JavaScript.
 
